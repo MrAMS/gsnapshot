@@ -2,6 +2,10 @@
 **g**lobal **snapshot**
 一个更准,更快的difftest系统
 
+[在线演示文档](http://gsnapshot.slides.santiego.ink)
+
+**思路:**
+
 记录所有gpr，pc寄存器的**改变**和store指令的地址和值，打包成一个"快照"，
 
 对于每个程序只需要运行**一次**REF,生成快照，之后不再需要运行REF,而是直接读取快照,
